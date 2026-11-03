@@ -1,0 +1,17 @@
+{
+  "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "num_hidden_states": 29,
+  "layers_tested": [
+    2,
+    7,
+    11,
+    15,
+    20,
+    24,
+    28
+  ],
+  "max_new_tokens": 400,
+  "torch": "2.11.0",
+  "transformers": "5.8.0",
+  "date": "2026-11-03"
+}
