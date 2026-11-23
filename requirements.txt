@@ -1,0 +1,7 @@
+torch==2.11.0
+transformers==5.8.0
+pandas
+numpy
+scikit-learn
+matplotlib
+scipy

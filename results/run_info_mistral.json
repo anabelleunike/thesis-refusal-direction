@@ -1,0 +1,17 @@
+{
+  "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+  "num_hidden_states": 33,
+  "layers_tested": [
+    3,
+    8,
+    13,
+    18,
+    23,
+    28,
+    32
+  ],
+  "max_new_tokens": 400,
+  "torch": "2.11.0",
+  "transformers": "5.8.0",
+  "date": "2026-11-03"
+}

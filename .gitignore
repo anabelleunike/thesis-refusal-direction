@@ -1,0 +1,26 @@
+# --- generated model outputs & attack artifacts (deliberately unpublished) ---
+responses_*.csv
+*_responses_by_harmfulness_level.csv
+steering_results_*.csv
+ablation_*.csv
+actadd_*.csv
+ssr_*.csv
+*.log
+
+# old working copies that contain generations
+archive/
+backup nov2/
+
+# local executed-notebook backups (kept out of the published repo)
+.notebook-backup/
+
+# caches / local
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+.env
+*.safetensors
+*.bin
+
+# vendored reference pipeline (kept untracked, as before)
+refusal_direction/
