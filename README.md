@@ -18,21 +18,25 @@ DeepSeek-R1-Distill-Qwen-7B, with TinyLlama-1.1B-Chat as an early pilot).
 - `03_subspace_rerouting.ipynb` — RQ3: Steering-SSR attack (GCG suffix search on a combined
   steering + target-completion objective).
 - `resuts-qwen-new/actadd.py`, `results-mistral-new/actadd_mistral.py` — activation-addition runs.
-- `results-mistral-new/ablation_mistral.py` — directional ablation (Mistral).
+- `results-mistral-new/ablation_mistral.py`, `results-deepseek-new/ablation_deepseek.py` — directional ablation (Mistral, DeepSeek).
 - `causal_projection.py` — projects intervention outputs back onto the refusal direction.
 - `rq3_summary.py` — builds the RQ3 summary table / figure.
 
 ## Reproducing
 - **RQ1:** run `02_main_experiment.ipynb` cells 0–6 to extract activations, then the PCA /
   projection cells for per-layer PCA and projection-by-level.
-- **RQ2:** ablation = `02_main_experiment.ipynb` cell 8 (or `ablation_mistral.py`);
-  addition = `actadd.py` / `actadd_mistral.py`.
+- **RQ2:** ablation = `02_main_experiment.ipynb` cell 8 (or `ablation_mistral.py` /
+  `ablation_deepseek.py`); addition = `actadd.py` / `actadd_mistral.py`.
 - **RQ3:** `03_subspace_rerouting.ipynb` (steering-only → combined loss → ASCII-constrained
   suffix → easiest-target random restarts).
 
 ## Data
 - `data/prompts_40.csv` — the 40 prompts (columns: topic, level, prompt); 8 topics × 5 harmfulness levels.
 - `data/keyword_lists.txt` — the refusal-detector keyword lists (extended + Arditi short list).
+
+## Supplementary notes
+- `docs/deepseek_rq2_note.md` — DeepSeek RQ2 directional-ablation result (refusal-rate table and
+  the reasoning-trace / truncation caveats specific to the distilled reasoning model).
 
 ## Hardware / environment
 Apple M2, 24 GB unified memory, PyTorch MPS backend, models loaded in float16.
