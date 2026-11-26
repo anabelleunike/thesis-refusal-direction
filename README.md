@@ -37,6 +37,8 @@ DeepSeek-R1-Distill-Qwen-7B, with TinyLlama-1.1B-Chat as an early pilot).
 ## Supplementary notes
 - `docs/deepseek_rq2_note.md` — DeepSeek RQ2 directional-ablation result (refusal-rate table and
   the reasoning-trace / truncation caveats specific to the distilled reasoning model).
+- `docs/deepseek_rq3_pilot.md` — DeepSeek RQ3 Steering-SSR pilot (single steering-only attempt):
+  projection ranking, loss table, timing, and the topic-hijack failure mode it exposed.
 
 ## Hardware / environment
 Apple M2, 24 GB unified memory, PyTorch MPS backend, models loaded in float16.
